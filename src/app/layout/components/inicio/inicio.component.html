@@ -1,0 +1,37 @@
+<ion-grid>
+  <ion-row>
+
+    <ion-col class="foto-yo">
+      <img src="../../../../assets/img.jpeg.svg">
+    </ion-col>
+
+    <ion-col class="nav-text">
+      <ion-row class="nav">
+        <ion-col size="auto" class="nav-title" *ngFor="let title of titleNav">
+          <ion-label>{{title.titie}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="text-tech">
+        <ion-col class="content-info">
+          <ion-row>
+            <ion-text>
+              <h1>Yeiosn Camilo Ruiz Castro</h1>
+              <ion-label>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quod temporibus adipisci beatae, fugit sapiente quae necessitatibus id commodi molestiae tempora culpa voluptatem accusamus ipsam aspernatur consectetur repellendus pariatur itaque?
+              </ion-label>
+            </ion-text>
+
+            <ion-row class="tech">
+              <ng-container *ngFor="let img of imgTech">
+                <img style="width: 100px; height: 100px; padding: 0.3rem;" [src]="img.path">
+              </ng-container>
+            </ion-row>
+
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
