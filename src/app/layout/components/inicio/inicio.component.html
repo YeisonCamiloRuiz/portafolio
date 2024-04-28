@@ -3,6 +3,11 @@
 
     <ion-col class="foto-yo">
       <img src="../../../../assets/img.jpeg.svg">
+
+      <ion-row class="content-reds">
+        <img class="social-reds-git" src="../../../../assets/Img/icons8-github.svg">
+        <img class="social-reds-link" src="../../../../assets/Img/icons8-linkedin.svg">
+      </ion-row>
     </ion-col>
 
     <ion-col class="nav-text">
@@ -18,13 +23,16 @@
             <ion-text>
               <h1>Yeiosn Camilo Ruiz Castro</h1>
               <ion-label>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quod temporibus adipisci beatae, fugit sapiente quae necessitatibus id commodi molestiae tempora culpa voluptatem accusamus ipsam aspernatur consectetur repellendus pariatur itaque?
+                Tengo 18 años, soy de Colombia y llevo un año y medio trabajando en el desarrollo frontend.
+                Comencé aprendiendo lo básico con HTML, CSS y JavaScript. Luego me adentré en Angular y llevo
+                6 meses trabajando con él, además de interesarme en el desarrollo móvil con Ionic desde la
+                perspectiva frontend.
               </ion-label>
             </ion-text>
 
             <ion-row class="tech">
               <ng-container *ngFor="let img of imgTech">
-                <img style="width: 100px; height: 100px; padding: 0.3rem;" [src]="img.path">
+                <img style="width: 100px; height: 100px; padding: 0.3rem;" [src]="img.path" class="move">
               </ng-container>
             </ion-row>
 

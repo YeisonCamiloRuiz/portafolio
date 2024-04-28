@@ -11,12 +11,37 @@ ion-grid{
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      flex-direction: column;
       height: 100%;
 
+      .content-reds{
+        padding-top: 0.2rem;
+        display: flex;
+        width: 100%;height: 50%;
+        align-items: center;
+        justify-content: center;
+
+        .social-reds-git{
+          cursor: pointer;
+          width: auto;
+          height: 80px;
+          filter: invert(95%);
+        }
+        .social-reds-link{
+          width: 55px;
+          height: 63px;
+          filter: invert(100%);
+          cursor: pointer;
+        }
+        .social-reds-git:active,
+        .social-reds-link:active{
+          filter: invert(70%);
+        }
+      }
+
       img{
-        width: 50%;
-        height: 100%;
+        width: 41%;
+        height: 83%;
         border-radius: 50%;
       }
     }
@@ -46,14 +71,18 @@ ion-grid{
         .content-info{
           width: 50%;
           height: 100%;
-          background-color: #ffffff0e;
+          background-color: #e0dbdb17;
           border-radius: 1rem;
-          backdrop-filter: blur(2px);
+          backdrop-filter: blur(50px);
 
           ion-text{
-            height: 65%;
+            height: 70%;
+            display: flex;
+            align-items: start;
+            justify-content: space-evenly;
+            flex-direction: column;
             h1{
-              margin-bottom: 2rem;
+              margin-bottom: 0.5rem;
             }
             ion-label{
               font-size: 1.2rem;
@@ -61,6 +90,23 @@ ion-grid{
           }
           .tech{
             padding: 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+
+
+            @keyframes moveImages {
+              0%, 100% { transform: translateX(0); }
+              25% { transform: translateX(25%); }
+              50% { transform: translateX(50%); }
+              75% { transform: translateX(75%); }
+            }
+
+            .move {
+              animation: moveImages 2s linear infinite alternate; /* La animación se repite infinitamente */
+            }
+
 
           }
         }
