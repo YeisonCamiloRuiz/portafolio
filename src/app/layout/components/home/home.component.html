@@ -1,5 +1,12 @@
 <ion-grid>
   <ion-col>
+
+    <ion-row class="nav">
+      <ion-col size="auto" class="nav-title" *ngFor="let title of titleNav">
+        <ion-label>{{title.titie}}</ion-label>
+      </ion-col>
+    </ion-row>
+
     <ion-row class="inicio">
       <ion-row class="col-star">
         <app-inicio></app-inicio>

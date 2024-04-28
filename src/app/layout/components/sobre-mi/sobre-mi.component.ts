@@ -13,4 +13,26 @@ export class SobreMiComponent  implements OnInit {
     console.log("Hola")
   }
 
+  dataCard=[
+    {
+      pathImg:'https://ionicframework.com/docs/img/demos/card-media.png',
+      titleCard:'Titulo',
+      textCard:'iusdbiugsdbiusdfiugbiusdfbfgsdbfuhsedvgbfsdguiyhfgusdhfgsuyfghsdgfuysdgyufsdguyfgsdyufguysdgfuhsd'
+    },
+    {
+      pathImg:'https://ionicframework.com/docs/img/demos/card-media.png',
+      titleCard:'Titulo',
+      textCard:'iusdbiugsdbiusdfiugbiusdfbfgsdbfuhsedvgbfsdguiyhfgusdhfgsuyfghsdgfuysdgyufsdguyfgsdyufguysdgfuhsd'
+    },
+    {
+      pathImg:'https://ionicframework.com/docs/img/demos/card-media.png',
+      titleCard:'Titulo',
+      textCard:'iusdbiugsdbiusdfiugbiusdfbfgsdbfuhsedvgbfsdguiyhfgusdhfgsuyfghsdgfuysdgyufsdguyfgsdyufguysdgfuhsd'
+    },
+    {
+      pathImg:'https://ionicframework.com/docs/img/demos/card-media.png',
+      titleCard:'Titulo',
+      textCard:'iusdbiugsdbiusdfiugbiusdfbfgsdbfuhsedvgbfsdguiyhfgusdhfgsuyfghsdgfuysdgyufsdguyfgsdyufguysdgfuhsd'
+    }
+  ]
 }

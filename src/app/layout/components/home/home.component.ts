@@ -13,4 +13,18 @@ export class HomeComponent  implements OnInit {
     console.log("Hola")
   }
 
+  titleNav=[
+    {
+      titie:'Inicio',
+      path:''
+    },
+    {
+      titie:'Sobre Mi y Proyectos',
+      path:''
+    },
+    {
+      titie:'Contacto',
+      path:''
+    },
+  ]
 }

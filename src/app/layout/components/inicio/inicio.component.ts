@@ -13,24 +13,7 @@ export class InicioComponent  implements OnInit {
     console.log("Hola")
   }
 
-  titleNav=[
-    {
-      titie:'Inicio',
-      path:''
-    },
-    {
-      titie:'Sobre Mi',
-      path:''
-    },
-    {
-      titie:'Proyectos',
-      path:''
-    },
-    {
-      titie:'Contacto',
-      path:''
-    },
-  ]
+
 
   imgTech=[
     {

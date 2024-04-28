@@ -1,6 +1,31 @@
 ion-grid{
   overflow: auto;
 
+  .nav{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    background-color: black;
+    backdrop-filter: blur(10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-title{
+      margin: 1rem;
+      cursor: pointer;
+
+      ion-label{
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+    ion-label:hover{
+      border-bottom: 1px solid white;
+    }
+  }
+
   .inicio{
     width: 100vw;
     height: 100vh;

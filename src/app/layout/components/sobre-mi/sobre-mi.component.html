@@ -1,14 +1,43 @@
 <ion-grid>
-  <ion-col>
-    <ion-row class="title">
-      <ion-text>
-        <h1>Sobre mi</h1>
-      </ion-text>
-    </ion-row>
-    <ion-row class="info">
-      <ion-text>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla nemo quasi enim et, quo consequatur quos, accusamus omnis, nam sequi ipsa odit ullam recusandae fugit aperiam iste numquam quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequuntur, perspiciatis nesciunt magni consequatur similique. Facere nulla nam magnam saepe quibusdam doloribus? Temporibus saepe numquam eum aspernatur dolorum eius accusantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, voluptatem est. Pariatur neque, fugiat blanditiis dolores quos beatae temporibus nemo exercitationem quod ipsam quidem dicta eaque, tenetur quis iste laudantium!</p>
-      </ion-text>
-    </ion-row>
-  </ion-col>
+  <ion-row class="content-my">
+
+    <ion-col class="col">
+      <ion-row>
+        <ion-text>
+          <h1>
+            Sobre mi
+          </h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, iure! Neque temporibus officiis esse ab minima officia maiores, magnam dolore numquam exercitationem incidunt assumenda accusantium sint cum ea velit? Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit adipisci tenetur in laudantium sed aut autem consequatur velit sit cumque ipsam eveniet iure, tempora ratione esse, et ipsa perferendis?</p>
+        </ion-text>
+      </ion-row>
+    </ion-col>
+
+    <ion-col class="col">
+
+
+        <ion-row class="title">
+          <ion-text>
+            <h1>Poryectos</h1>
+          </ion-text>
+        </ion-row>
+
+        <ion-row class="content-card">
+          <ion-card class="card"  *ngFor="let card of dataCard">
+            <img alt="Silhouette of mountains" [src]="card.pathImg" />
+            <ion-card-header>
+              <ion-card-title>{{card.titleCard}}</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              {{card.textCard}}
+            </ion-card-content>
+          </ion-card>
+        </ion-row>
+
+
+
+    </ion-col>
+
+  </ion-row>
 </ion-grid>

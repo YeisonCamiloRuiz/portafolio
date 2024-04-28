@@ -2,25 +2,42 @@ ion-grid{
   width: 100%;
   height: 100%;
 
-  .title{
-    width: 100%;
-    height: 20%;
+  .content-my{
+    padding:1.5rem;
+    height: 100%;
 
-    ion-text{
-      width: 100%;
+    .col{
+      background-color: #e0dbdb17;
+      border-radius: 1rem;
+      backdrop-filter: blur(50px);
       height: 100%;
+      padding: 2.5rem;
+      margin: 1rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      h1{
-        font-size: 2rem;
+      ion-text{
+        text-align: center;
+        h1{
+          font-weight: bold;
+          font-size: 3rem;
+        }
+        p{
+          text-align: left;
+          font-size: 1.5rem;
+        }
       }
     }
-  }
+      .content-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-  .info{
-    width: 100%;
-    height: 80%;
+      .card{
+        width: 35%;
+      }
   }
 }
