@@ -9,6 +9,8 @@ export class SobreMiComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log("Hola")
+  }
 
 }
