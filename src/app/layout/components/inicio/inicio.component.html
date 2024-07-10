@@ -27,7 +27,9 @@
 
             <ion-row class="tech">
               <ng-container *ngFor="let img of imgTech">
-                <img style="width: 100px; height: 100px; padding: 0.3rem;" [src]="img.path" class="move">
+                <ion-col size="1.6">
+                  <img [src]="img.path" class="move">
+                </ion-col>
               </ng-container>
             </ion-row>
 

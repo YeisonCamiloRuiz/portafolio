@@ -50,17 +50,18 @@ ion-grid{
     }
     .nav-text{
       .text-tech{
-        height: 70%;
+        height: 100%;
         padding: 0.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
         .content-info{
           width: 50%;
-          height: 70%;
+          height: 50%;
           background-color: #e0dbdb17;
           border-radius: 1rem;
           backdrop-filter: blur(50px);
+          border: 1px solid rgb(107, 106, 106);
 
           ion-text{
             height: 70%;
@@ -81,20 +82,6 @@ ion-grid{
             align-items: center;
             justify-content: center;
             height: auto;
-
-
-            @keyframes moveImages {
-              0%, 100% { transform: translateX(0); }
-              25% { transform: translateX(25%); }
-              50% { transform: translateX(50%); }
-              75% { transform: translateX(75%); }
-            }
-
-            .move {
-              animation: moveImages 2s linear infinite alternate; /* La animación se repite infinitamente */
-            }
-
-
           }
         }
       }
